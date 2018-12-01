@@ -1,31 +1,19 @@
 # ECIES
-Bitcore implements [Elliptic Curve Integrated Encryption Scheme (ECIES)](http://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), which is a public key encryption system that performs bulk encryption on data using a symmetric cipher and a random key.
+Orecore implements [Elliptic Curve Integrated Encryption Scheme (ECIES)](http://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), which is a public key encryption system that performs bulk encryption on data using a symmetric cipher and a random key.
 
-For more information refer to the [bitcore-ecies](https://github.com/bitpay/bitcore-ecies) github repo.
+For more information refer to the [orecore-ecies](https://github.com/GAB5TER/orecore-ecies) github repo.
 
 ## Installation
 ECIES is implemented as a separate module and you must add it to your dependencies:
 
-For node projects:
-
-```bash
-npm install bitcore-ecies --save
-```
-
-For client-side projects:
-
-```bash
-bower install bitcore-ecies --save
-```
-
 ## Example
 
 ```javascript
-var bitcore = require('bitcore-lib-dash');
-var ECIES = require('bitcore-ecies-dash');
+var orecore = require('orecore-lib');
+var ECIES = require('orecore-ecies');
 
-var alicePrivateKey = new bitcore.PrivateKey();
-var bobPrivateKey = new bitcore.PrivateKey();
+var alicePrivateKey = new orecore.PrivateKey();
+var bobPrivateKey = new orecore.PrivateKey();
 
 var data = new Buffer('The is a raw data example');
 
