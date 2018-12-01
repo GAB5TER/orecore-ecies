@@ -39,6 +39,6 @@ Code released under [the MIT license](https://github.com/GAB5TER/orecore/blob/ma
 
 Copyright 2013-2015 BitPay, Inc. Bitcore is a trademark maintained by BitPay, Inc.
 
-[bitcore-dash]: http://github.com/GAB5TER/orecore
+[orecore]: http://github.com/GAB5TER/orecore
 [ECIES]: http://en.wikipedia.org/wiki/Integrated_Encryption_Scheme
 [ryan]: http://github.com/ryanxcharles
