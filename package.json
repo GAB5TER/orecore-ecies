@@ -1,7 +1,7 @@
 {
-  "name": "bitcore-ecies-dash",
+  "name": "orecore-ecies-",
   "version": "1.0.4",
-  "description": "ECIES implemented for Bitcore-Dash.",
+  "description": "ECIES implemented for Orecore.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/bitcore-ecies-dash.git"
+    "url": "https://github.com/GAB5TER/orecore-ecies.git"
   },
   "keywords": [
-    "dash",
-    "bitcore",
+    "galactrum",
+    "orecore",
     "ecies",
     "crypto",
     "cryptography",
@@ -27,19 +27,19 @@
   "author": "BitPay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/bitcore-ecies-dash/issues"
+    "url": "https://github.com/GAB5TER/orecore-ecies/issues"
   },
-  "homepage": "https://github.com/dashevo/bitcore-ecies-dash",
+  "homepage": "https://github.com/GAB5TER/orecore-ecies",
   "devDependencies": {
     "assert": "^1.4.1",
-    "bitcore-build-dash": "dashpay/bitcore-build-dash",
+    "orecore-build": "GAB5TER/orecore-build",
     "brfs": "^2.0.1",
     "browserify": "^16.2.2",
     "chai": "~4.1.2"
   },
   "dependencies": {
     "aes": "^0.1.0",
-    "@dashevo/dashcore-lib": "^1.0.0-alpha.10",
+    "orecore-lib": "GAB5TER/orecore-lib",
     "bls-lib": "^0.3.4"
   }
 }

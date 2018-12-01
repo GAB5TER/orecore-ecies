@@ -1,4 +1,4 @@
 'use strict';
 
-var gulp_bitcore = require('bitcore-build-dash');
-gulp_bitcore ('ecies', {skipBrowser: true});
+var gulp_orecore = require('orecore-build');
+gulp_orecore ('ecies', {skipBrowser: true});
