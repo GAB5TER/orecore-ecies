@@ -1,7 +1,7 @@
 const bls = require('bls-lib');
 const ECIES = require('../');
-const bitcore = require('@dashevo/dashcore-lib');
-const PrivateKey = bitcore.PrivateKey;
+const orecore = require('orecore-lib');
+const PrivateKey = orecore.PrivateKey;
 
 bls.onModuleInit(() => {
   // need to wait for wasm module to load
