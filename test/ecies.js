@@ -3,8 +3,8 @@
 var ECIES = require('../');
 const bls = require('bls-lib');
 var should = require('chai').should();
-var bitcore = require('@dashevo/dashcore-lib');
-var PrivateKey = bitcore.PrivateKey;
+var orecore = require('orecore-lib');
+var PrivateKey = orecore.PrivateKey;
 
 
 var aliceKey = new PrivateKey('XFKfS6jQ1ic2xonndSD2Rtvwb2GRE5XJG7q2ScBnRhSJQU5zXGD9');
@@ -27,7 +27,7 @@ describe('ECIES', function () {
   });
 
   it('errors', function () {
-    should.exist(bitcore.errors.ECIES);
+    should.exist(orecore.errors.ECIES);
   });
 
 });
@@ -136,7 +136,7 @@ describe('ECDSA', function () {
   });
 
   it('ECDSA: correctly fails if trying to decrypt a bad message', function () {
-    var encrypted = bitcore.util.buffer.copy(encBuf);
+    var encrypted = orecore.util.buffer.copy(encBuf);
     encrypted[encrypted.length - 1] = 2;
     (function () {
       return bob.decrypt(encrypted);
@@ -259,7 +259,7 @@ describe('BLS', function () {
   });
 
   it('BLS: correctly fails if trying to decrypt a bad message', function () {
-    var encrypted = bitcore.util.buffer.copy(encBuf);
+    var encrypted = orecore.util.buffer.copy(encBuf);
     encrypted[encrypted.length - 1] = 2;
     (function () {
       return blsBob.decryptBLS(bls, encrypted);
